@@ -27,7 +27,7 @@ body {
 	line-height: 0.7;
 	margin: 0;
 	gap: 1rem;
-	margin-block-start: em;
+	margin-block-start: 1em;
 	wh ite-space: nowrap;
 }
 .work {
