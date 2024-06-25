@@ -21,7 +21,7 @@ body {
 .title hr {
 	width: 75%;
 }
-.join {
+.join p{
 	display: inline-block;
 	text-align: center;
 }
