@@ -25,6 +25,7 @@ body {
 	display: inline-block;
 	text-align: center;
 	line-height: 1.7;
+	white-space: nowrap;
 }
 .work {
 	display: flex;
