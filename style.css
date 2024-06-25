@@ -21,10 +21,10 @@ body {
 .title hr {
 	width: 75%;
 }
-.join p.small{
+.join p{
 	display: inline-block;
 	text-align: center;
-	li ne-height: 0.7;
+	line-height: 0.7;
 }
 .work {
 	display: flex;
