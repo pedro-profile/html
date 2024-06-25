@@ -24,7 +24,7 @@ body {
 .join p{
 	display: inline-block;
 	text-align: center;
-	line-height: 1.1;
+	line-height: 0.1;
 	wh ite-space: nowrap;
 }
 .work {
