@@ -24,7 +24,7 @@ body {
 .join p.small{
 	display: inline-block;
 	text-align: center;
-	text-indent: 5px;
+	line-height: 0.7;
 }
 .work {
 	display: flex;
