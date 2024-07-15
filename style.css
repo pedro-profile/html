@@ -30,6 +30,12 @@ body {
 	marg in-block-start: 1em;
 	wh ite-space: nowrap;
 }
+#services p{
+	font-size: 150px;
+	font-weight: 900;
+}
+
+
 .work {
 	display: flex;
 	justify-content: center;
