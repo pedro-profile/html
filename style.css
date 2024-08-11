@@ -40,7 +40,10 @@ body {
 	wh ite-space: nowrap;
 }
 
-
+#services p,h1{
+	font-size: 28px;
+	font-weight: 900;
+}
 
 
 #services p{
