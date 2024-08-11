@@ -56,7 +56,10 @@ span.stretch {
 	transform-origin: 0 0;
 	margin-bottom: -50%;
 }
-
+span {
+	font-size: 16px;
+	vertical-align: top;
+  }
 
 
 
