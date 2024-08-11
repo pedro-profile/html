@@ -49,12 +49,12 @@ body {
 
 
 span.stretch {
-    display:inline-block;
-    -webkit-transform:scale(2,1); /* Safari and Chrome */
-    -moz-transform:scale(2,1); /* Firefox */
-    -ms-transform:scale(2,1); /* IE 9 */
-    -o-transform:scale(2,1); /* Opera */
-    transform:scale(2,1); /* W3C */
+	letter-spacing: 2px;
+	display: inline-block;
+	font-size: 32px;
+	transform: scaleY(0.5);
+	transform-origin: 0 0;
+	margin-bottom: -50%;
 }
 
 
