@@ -41,6 +41,7 @@ body {
 }
 
 #name h1{
+	display: inline-block;
 	font-size: 45px; 
 	font-stretch: ultra-expanded;
 	height: 150px;
