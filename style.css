@@ -41,9 +41,8 @@ body {
 }
 
 #name h1{
-	font-size: 45px;
-	line-height: 500px;
-
+	font-size: 45px; 
+	height: 50px;
 }
 
 
