@@ -52,7 +52,7 @@ span.stretch {
 	letter-spacing: 2px;
 	display: inline-block;
 	font-size: 32px;
-	transform: scaleY(0.5);
+	transform: scaleY(5.5);
 	transform-origin: 0 0;
 	margin-bottom: -50%;
 }
