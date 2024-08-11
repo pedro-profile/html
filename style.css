@@ -42,8 +42,9 @@ body {
 
 #name h1{
 	font-size: 45px; 
+	font-stretch: expanded;
 	height: 150px;
-	
+
 }
 
 
