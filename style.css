@@ -41,72 +41,21 @@ body {
 }
 
 #name h1{
-	display: inline-block;
+	disp lay: inline-block;
+	position: relative;
+	height: 50px;
+	bottom: 45px; 
+  	font-family: "Schoolbell";
 	font-size: 45px; 
 	transform: scale(1, 1.5);
-	height: 50px;
-	position: relative;
-	bottom: 45px; 
-
-
-
-
-
-/* A font family name and a generic family name */
-fo nt-family: "Gill Sans Extrabold", sans-serif;
-fo nt-family: "Goudy Bookletter 1911", sans-serif;
-
-/* A generic family name only */
-fo nt-family: serif;
-fo nt-family: sans-serif;
-f ont-family: monospace;
-fon t-family: cursive;
-fo nt-family: fantasy;
-fo nt-family: system-ui;
-fo nt-family: ui-serif;
-fo nt-family: ui-sans-serif;
-fo nt-family: ui-monospace;
-f ont-family: ui-rounded;
-fo nt-family: emoji;
-f ont-family: math;
-fo nt-family: fangsong;
-
-/* Global values */
-fo nt-family: inherit;
-fo nt-family: initial;
-fon t-family: revert;
-fo nt-family: revert-layer;
-f ont-family: unset;
-
-fon t-family: "Gill Sans Extrabold", sans-serif;
-
-fo nt-family: 'Schoolbell';   
-
-font-family: "Schoolbell";
-  font-size: 45px;
-  font-weight: 300;
-  line-height: 1.2;
-  text-transform: none;
-  display: block;
-  transform: rotate(-5deg) !important;
-  margin: auto;
-  position: relative;
-  font-weight: normal;
-  letter-spacing: 0px;
-
-
-
-
-
-
-
-
+  	line-height: 1.2;
+  	text-transform: none;
+  	dis play: block;
+  	transform: rotate(-5deg) !important;
+  	margin: auto;
+  	font-weight: normal;
+  	letter-spacing: 0px;
 }
-
-
-
-
-
 
 #services p{
 	font-size: 28px;
