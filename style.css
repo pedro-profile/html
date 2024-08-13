@@ -112,6 +112,10 @@ body {
 	font-size: 1.6rem;
 	letter-spacing: 0.2rem;
 }
+.dates h3 {
+	disp lay: block;
+	width: 100%;
+}
 .education {
 	padding: 30px;
 }
@@ -126,3 +130,6 @@ body {
 .education hr {
 	width: 75%;
 }
+
+
+
