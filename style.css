@@ -98,7 +98,7 @@ body {
   }*/
   
 /*.frame img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
   }*/
 
@@ -151,19 +151,19 @@ figure {
   .bg__loyout-wrapper {
 	position: relative;
 	top:105px;
-	width: 100%;
+	max-width: 100%;
 	height: 25vh;
 	backg round-color: #536dfe;
   }
   
   .bg__picture {
-	width: 100%;
+	max-width: 100%;
 	height: 100%;
 	overflow: hidden;
   }
   
   .bg__picture-wrapper {
-	width: 100%;
+	max-width: 100%;
 	height: 100%;
 	padding-top: 48px;
 	padding-bottom: 48px;
@@ -174,7 +174,7 @@ figure {
   }
   
   .bg__frame-inner-shadow-outer {
-	width: 100%;
+	max-width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
@@ -187,7 +187,7 @@ figure {
   }
   
   .bg__frame-inner-shadow {
-	width: 100%;
+	max-width: 100%;
 	height: 100%;
 	-webkit-box-shadow: inset 6px 8px 16px -8px #000001;
 	-moz-box-shadow: inset 68px 8px 16px -8px #000001;
@@ -196,7 +196,7 @@ figure {
   }
   
   .bg__frame-inner-shine-outer {
-	width: 100%;
+	max-width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
@@ -209,7 +209,7 @@ figure {
   }
   
   .bg__frame-inner-shine {
-	width: 100%;
+	max-width: 100%;
 	height: 100%;
 	-webkit-box-shadow: inset -48px -8px 58px -14px #212121;
 	-moz-box-shadow: inset -4px -8px 58px -14px #212121;
@@ -218,7 +218,7 @@ figure {
   }
   
   .bg__frame-inner-photo-shadow-outer {
-	width: 100%;
+	max-width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
@@ -231,7 +231,7 @@ figure {
   }
   
   .bg__frame-inner-photo-shadow {
-	width: 100%;
+	max-width: 100%;
 	height: 100%;
 	-webkit-box-shadow: inset -2px 1px 12px -1px #212121;
 	-moz-box-shadow: inset -2px -1px 12px -1px #212121;
@@ -337,7 +337,7 @@ bottom: 650px;
 }
 .dates h3 {
 	disp lay: block;
-	width: 100%;
+	max-width: 100%;
 }
 .education {
 	padding: 30px;

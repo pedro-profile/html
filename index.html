@@ -4,7 +4,7 @@
     <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <title>Pedro Carvalho - HTML/CSS Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -30,11 +30,32 @@
     <meta http-equiv="refresh" content="1">
     <link rel="stylesheet" href="style.css">
     <style>
-      /* CSS Start */
-      /* CSS End */
+      /* Define the main wrapper */ 
+      .main-wrapper {
+        width: 70%;
+        /* Adjust the width as needed */
+        margin: auto;
+        /* Center the wrapper */
+        padding: 20px;
+        /* Add internal spacing */
+        border: 1px solid #1B1B25;
+        /* Define a border */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Optional: Add a shadow */
+        background-color: #1B1B25;
+        /* Background color */
+      }
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .main-wrapper {
+          width: 95%;
+          /* Make the wrapper wider on smaller screens */
+        }
+      }
     </style>
   </head>
   <body>
+    <div class="main-wrapper">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -320,5 +341,6 @@
         </div>
       </div>
     </div>
+  </div>
   </body>
 </html>
