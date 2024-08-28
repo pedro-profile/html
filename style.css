@@ -41,210 +41,93 @@ top: 70px;
 
 
 /* Stage lights - Start */ 
-ht ml,
-bo dy {
-	background: rgb(0,0,0);
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
+body {
+	background-color: darkgray;
 	margin: 0;
-}
-
-.panel {
-	height: 100vh;
-	width: 220px;
-	position: relative;
+  }
+  
+  .rafter {
 	display: flex;
 	justify-content: center;
-}
-
-.sconcePanelLast {
+	border-top: 4px solid black;
+  }
+  
+  .lamp {
 	position: relative;
-	top: 65px;
-	width: 120px;
-	border-width: 80vh 40px 0;
-	border-style: solid;
-	border-color: rgb(232,166,53) transparent;
-	-webkit-filter: drop-shadow(0px 3px 3px rgba(0,0,0,.8));
-	filter: drop-shadow(0px 3px 3px rgba(0,0,0,.8));
-}
-
-.sconcePanelLast:before {
-	content: "";
+  }
+  
+  .lamp:nth-child(1) {
+	transform: translate(-2px,5px) rotate(-9deg);
+  }
+  
+  .lamp:nth-child(3) {
+	transform: translate(2px,5px) rotate(9deg);
+  }
+  
+  .lamp::before {
+	content: '';
 	position: absolute;
+	border-bottom: 400px solid rgba(255, 255, 255, 0.5);
+	border-left: 50px solid transparent;
+	width: 25px;
 	height: 0;
-	width: 30px;
-	top: calc(-80vh + -30px);
-	left: -40px;
-	border-width: 0 85px 30px;
-	border-style: solid;
-	border-color: transparent transparent rgb(232,166,53);	
-}
-
-.sconcePanelMiddle {
+	border-right: 50px solid transparent;
+	top: 56px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+  }
+  
+  .lamp::after {
+	content: '';
 	position: absolute;
-	top: 40px;
-	width: 85px;
-	border-width: 86.5vh 30px 0;
-	border-style: solid;
-	border-color: rgb(190,0,0) transparent;
-	-webkit-filter: drop-shadow(0px 3px 3px rgba(0,0,0,.75));
-	filter: drop-shadow(0px 3px 3px rgba(0,0,0,.75));
-}
-
-.sconcePanelMiddle:before {
-	content: "";
-	position: absolute;
-	height: 0;
-	width: 0;
-	top: calc(-86.5vh + -35px);
-	left: -30px;
-	border-width: 0 73px 35px;
-	border-style: solid;
-	border-color: transparent transparent rgb(190,0,0);	
-}
-
-.sconcePanelFront {
-	position: absolute;
-	width: 68px;
-	height: 82vh;
-	top: 40px;
-	background: rgb(232,166,53);
-	-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.4), 
-							-3px 2px 8px rgba(0,0,0,.1) inset,
-							3px 2px 8px rgba(0,0,0,.1) inset, 
-							0px -5px 8px rgba(0,0,0,.1) inset;
-	-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.4), 
-							-3px 2px 8px rgba(0,0,0,.1) inset,
-							3px 2px 8px rgba(0,0,0,.1) inset, 
-							0px -5px 8px rgba(0,0,0,.1) inset;
-	box-shadow: 0px 0px 2px rgba(0,0,0,0.4), 
-							-3px 2px 8px rgba(0,0,0,.1) inset,
-							3px 2px 8px rgba(0,0,0,.1) inset, 
-							0px -5px 8px rgba(0,0,0,.1) inset;
-	-webkit-filter: drop-shadow(0px 3px 3px rgba(0,0,0,.5));
-	filter: drop-shadow(0px 3px 3px rgba(0,0,0,.5));
-}
-
-.sconce {
-	position: absolute;
-	width: 60px;
+	border-radius: 0 0 62.5px 62.5px;
+	width: 125px;
+	height: 62.5px;
+	background: rgba(255, 255, 255, 0.5);
+	top: 456px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+  }
+  
+  .lamp[open]::before,
+  .lamp[open]::after {
+	opacity: 1;
+  }
+  
+  .lamp__icon {
+	list-style-image: none;
+	width: 64px;
+	height: 64px;
+	background: url('data:image/svg+xml;utf8,<svg width="64" height="64" viewBox="0 0 64 64" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M0 4C0 1.79086 1.79086 0 4 0H14.2857C16.4949 0 18.2857 1.79086 18.2857 4V36.5714H0V4Z" transform="translate(22.8571 8)"/><path d="M6.85714 0H25.1429L29.6 5.94286C30.5889 7.26133 29.6481 9.14286 28 9.14286H4C2.35191 9.14286 1.41115 7.26133 2.4 5.94286L6.85714 0Z" transform="translate(16 46.8571)"/></svg>');
+	position: relative;
+	cursor: pointer;
+	transition: opacity 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .lamp__icon:hover {
+	opacity: 0.6;
+  }
+  
+  .lamp__icon::-webkit-details-marker {
+	background: none;
+	color: transparent;
+  }
+  
+  .stage {    
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	top: 50px;
-}
-
-.light {
-	position: relative;
-	width: 20px;
-	height: 0;
-	border-left: 60px solid transparent;
-	border-right: 60px solid transparent;
-	border-top: 90px solid rgba(255,215,0,0.15);
-	top: -54px;
-	-webkit-filter: drop-shadow(0px 0px 8px rgb(255,215,0));
-	filter: drop-shadow(0px 0px 8px rgb(255,215,0));
-}
-
-.light:before {
-	content: '';
-	position: absolute;
-	width: 48px;
-	height: 35px;
-	left: -14px;
-	bottom: 0px;
-	position: absolute;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	background: -webkit-radial-gradient(rgb(255,255,183), 
-																			rgb(253,255,148), 
-																			rgb(184,127,58));
-	background: -moz-radial-gradient(rgb(255,255,183), 
-																	 rgb(253,255,148), 
-																	 rgb(184,127,58));
-	background: -o-radial-gradient(rgb(255,255,183), 
-																 rgb(253,255,148), 
-																 rgb(184,127,58));
-	background: radial-gradient(rgb(255,255,183), 
-															rgb(253,255,148), 
-															rgb(184,127,58));
-	-webkit-filter: drop-shadow(0px 3px 3px rgba(0,0,0,.7));
-	filter: drop-shadow(0px 3px 3px rgba(0,0,0,.7));
-}
-
-.light:after {
-	content: '';
-	position: absolute;
-	background: -webkit-linear-gradient(rgba(211,159,83,.3),
-																			rgba(109,73,37,0.6)),
-							-webkit-linear-gradient(-90deg,rgb(123,81,33),
-																			rgb(195,146,77),
-																			rgb(166,123,68));
-	background: -moz-linear-gradient(rgba(211,159,83,.3),
-																	 rgba(109,73,37,0.6)),
-							-moz-linear-gradient(-90deg,rgb(123,81,33),
-																	 rgb(195,146,77),
-																	 rgb(166,123,68));
-	background: -o-linear-gradient(rgba(211,159,83,.3),
-																 rgba(109,73,37,0.6)),
-							-o-linear-gradient(-90deg,rgb(123,81,33),
-																 rgb(195,146,77),
-																 rgb(166,123,68));
-	background: linear-gradient(rgba(211,159,83,.3),
-															rgba(109,73,37,0.6)),
-							linear-gradient(-90deg,rgb(123,81,33),
-															rgb(195,146,77),
-															rgb(166,123,68));
-	width: 46px;
-	height: 20px;
-	bottom: -9px;
-	right: -13px;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
-}
-
-.stem {
-	position: relative;
-	background: rgb(190,0,0);
-	width: 30px;
-	height: 60px;
-	top: -37px;
-	-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.5), 
-							0px 1px 2px rgba(0,0,0,.2) inset, 
-							0px -3px 8px rgba(0,0,0,.2) inset;
-	-moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.5), 
-							0px 1px 2px rgba(0,0,0,.2) inset, 
-							0px -3px 8px rgba(0,0,0,.2) inset;
-	box-shadow: 1px 1px 3px rgba(0,0,0,0.5), 
-							0px 1px 2px rgba(0,0,0,.2) inset, 
-							0px -3px 8px rgba(0,0,0,.2) inset;
-}
-
-.stem:before {
-	content: '';
-	position: absolute;
-	background: rgb(198,144,48);
-	width: 5px;
-	height: 135px;
-	top: -10px;
-	left: 13px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.5), 
-											-1px 1px 1px rgba(0,0,0,.7) inset,
-											1px 1px 1px rgba(0,0,0,.5) inset, 
-											0px -1px 1px rgba(0,0,0,.3) inset;
-	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.5), 
-									 -1px 1px 1px rgba(0,0,0,.7) inset,
-									 1px 1px 1px rgba(0,0,0,.5) inset, 
-									 0px -1px 1px rgba(0,0,0,.3) inset;
-	box-shadow: 0px 0px 3px rgba(0,0,0,0.5), 
-							-1px 1px 1px rgba(0,0,0,.7) inset,
-							1px 1px 1px rgba(0,0,0,.5) inset, 
-							0px -1px 1px rgba(0,0,0,.3) inset;
-}   
+	justify-content: center;
+	height: 400px;
+	align-items: flex-end;
+	border-bottom: 80px solid saddlebrown;
+  }
+  
+  .stage::after {
+	content: attr(content);
+	z-index: 1;
+  }
+  
 /* Stage lights - End */
 
 
