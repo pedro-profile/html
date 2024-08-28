@@ -112,7 +112,7 @@ top: 70px;
 	/* This sets allows us to transform the text on a 3D plane, and is somewhat a magic number */
 	perspective: 400px;
 	/* The rest is totally up to personal styling preferences */
-	position: relative;
+	pos ition: relative;
 	to p: 200px;
 	color: #feda4a;
 	font-family: 'Pathway Gothic One', sans-serif;
