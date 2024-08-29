@@ -101,12 +101,12 @@ top: 70px;
 
 
 /* SVG Flying Saucer - https://codepen.io/chrisgannon/pen/NqyWOw - Start */
-bo dy{
+body{
 	background-color:#00001A;
 	overflow:hidden;
 	text-align:center;
   }
-  b ody, h tml {
+  body, html {
 	  height: 100%;
 	  width: 100%;
 	  margin: 0;
