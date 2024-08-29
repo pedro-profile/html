@@ -101,7 +101,28 @@ top: 70px;
 
 
 /* SVG Flying Saucer - https://codepen.io/chrisgannon/pen/NqyWOw - Start */
-
+bo dy{
+	background-color:#00001A;
+	overflow:hidden;
+	text-align:center;
+  }
+  bo dy, html {
+	  height: 100%;
+	  width: 100%;
+	  margin: 0;
+	  padding: 0;
+  }
+  
+  .container{
+	width:100%;
+	height:100%;
+  }
+  
+  svg{
+	width:100%;
+	height:100%;
+  }
+  
 /* SVG Flying Saucer - End */
 
 /* Star Wars Effect - Start */
