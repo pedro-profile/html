@@ -100,13 +100,13 @@ top: 70px;
 }
 
 
-/* SVG Flying Saucer - https://codepen.io/chrisgannon/pen/NqyWOw - Start * /
+/* SVG Flying Saucer - https://codepen.io/chrisgannon/pen/NqyWOw - Start */
 bo dy{
 	background-color:#00001A;
 	overflow:hidden;
 	text-align:center;
   }
-  bo dy, ht ml {
+  bo dy, html {
 	  height: 100%;
 	  width: 100%;
 	  margin: 0;
