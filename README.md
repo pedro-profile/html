@@ -1,4 +1,4 @@
-# 👨‍💼 Pedro Carvalho - HTML/CSS Resume <br> https://solutionsarray.github.io/Pedro-Carvalho
+# 👨‍💼 Pedro Carvalho - HTML/CSS/JS Resume <br> https://pedro-profile.github.io/html/
 
 
 
